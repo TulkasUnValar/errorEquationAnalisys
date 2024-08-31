@@ -1,0 +1,17 @@
+{  
+  "name": "equation-error",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "node.js": "^0.0.1-security",
+    "chart.js": "^4.4.4",
+    "@cubejs-client/core": "^0.31.0"
+  }
+}

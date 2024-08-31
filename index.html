@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta class="author" content="Mauricio Quiñones (Tulkas) Cod.: 2116601" />
+    <meta
+      class="description"
+      content="This page contain the analysis error of an equation"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equation error analysis</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+  </head>
+  <body>
+    <section class="colum-1">
+      <h2>Análisis de error de ecuación</h2>
+      <figure class="picture">
+        <img
+          src="img/equation.jpg"
+          alt="Equation"
+          title="Equation"
+          width="400"
+          height="90"
+        />
+      </figure>
+      <button id="btnCalError">Calcular</button>
+      <button id="refresh">Refrescar</button>
+    </section>
+
+    <section class="colum-2">
+      <h2>Análisis de resultados</h2>
+      <div class="results">
+        <div class="error-stats">
+          <div class="error-item">
+            <p>Total errores arcoseno:</p>
+            <p id="arcsineTotalError"></p>
+            <p>(<span id="pArsineError"></span>%)</p>
+          </div>
+          <div class="error-item">
+            <p>Total errores arcocoseno:</p>
+            <p id="arccosineTotalError"></p>
+            <p>(<span id="pArccosineError"></span>%)</p>
+          </div>
+          <div class="error-item">
+            <p>Total errores raíz cuadrada:</p>
+            <p id="squareTotalError"></p>
+            <p>(<span id="pSquareError"></span>%)</p>
+          </div>
+          <div class="error-item">
+            <p>Total errores división:</p>
+            <p id="divisionTotalError"></p>
+            <p>(<span id="pDivisionError"></span>%)</p>
+          </div>
+          <div class="error-item">
+            <p>Total errores log natural:</p>
+            <p id="logTotalError"></p>
+            <p>(<span id="pLogError"></span>%)</p>
+          </div>
+        </div>
+
+        <figure class="doughnut-chart">
+          <canvas id="myChart"></canvas>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Link chart.js page -->
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link js -->
+    <script src="js/helpers.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+/* Author: Mauricio Quiñones Díaz (Tulkas) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181f38;
+  font-family: 'Poppins', monospace;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 200;
+  letter-spacing: 1px;
+
+  margin: 40px;
+}
+
+html {
+  padding: 20px;
+  font-weight: 300;
+}
+
+main {
+  padding: 60px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+
+img {
+  display: flex;
+}
+
+.picture {
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 5%;
+}
+
+.colum-2 {
+  height: 600px;
+}
+
+.colum-1, .colum-2 {
+  background:  rgba(255,255,255,.03);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.colum-2 > * {
+  width: 100%;
+  margin: 5px
+}
+
+canvas {
+  /* background-color: rgba(255,255,255,.01); */
+  /* border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);*/ 
+  padding: 10px 10px 30px;
+  transition: 2s;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #3498db;
+  font-family: 'Poppins', monospace;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  background-color: #FF0022;
+  opacity: 0.7;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.error-stats {
+  flex: 0.5;
+  min-width: 600px;
+  margin-top: 150px;
+}
+
+.error-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0;
+}
+
+.doughnut-chart {
+  flex: 1;
+  min-width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+/* Media query */
+@media  (max-width: 800px) {
+
+  main {
+      padding: 0;
+  }
+
+  h1 {
+      font-size: 2.1em;
+      font-weight: 100;
+  }
+
+  [class*='colum'] {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .colum-2 > * {
+      width: 100%;
+  }
+}
