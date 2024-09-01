@@ -1,10 +1,5 @@
 /* Author: Mauricio Quiñones Díaz (Tulkas)*/
 
-/* const { plugins, Legend } = require("chart.js");
- */
-/* const { plugins, Legend } = require("https://cdn.jsdelivr.net/npm/chart.js");
-const { plugins, Legend } = require("chart.js"); */
-
 Chart.defaults.color = '#ffffff'
 
 let arcsine = document.getElementById("arcsineTotalError")
